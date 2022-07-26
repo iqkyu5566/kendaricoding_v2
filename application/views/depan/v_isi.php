@@ -3,31 +3,29 @@
    <!-- ======= About Section ======= -->
    <section id="about" class="about">
      <div class="container">
-
-       <div class="row">
-         <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="150">
-           <img src="<?php echo base_url(); ?>assets/template/img/about.jpg" class="img-fluid" alt="">
-         </div>
-         <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
-           <h3>Katalog Kelas</h3>
-           <p class="font-italic">
-             " Barang siapa tidak mau merasakan pahitnya belajar, ia akan merasakan hinanya kebodohan sepanjang hidupnya"
-             <br>
-             --Imam Syafi'i rahimahullah--
-           </p>
-           <ul>
-             <li><i class="icofont-check-circled"></i>Tersedia Kelas <b>GRATIS</b> dan berbayar</li>
-             <li><i class="icofont-check-circled"></i>Tersedia Kelas Offline di wilayah kota Kendari dan sekitarnya</li>
-             <li><i class="icofont-check-circled"></i>Di bimbing langsung oleh tenaga pengajar yang sudah berpengalaman di bidangnya dan sudah sering menangani proyek tentang pengembangan Aplikasi web dan mobile</li>
-             <li><i class="icofont-check-circled"></i>Bisa belajar di mana saja dan kapan saja dengan waktu yang fleksibel</li>
-             <li><i class="icofont-check-circled"></i>Berkesempatan untuk gabung dalam proyek yang di akusisi oleh kendari coding dan technoreative</li>
-           </ul>
-           <a href="#" class="read-more">Lihat Katalog Kelas<i class="icofont-long-arrow-right"></i></a>
-         </div>
+       <?php include 'ombak.php' ?>
+       <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="150">
+         <img src="<?php echo base_url(); ?>assets/template/img/about.jpg" class="img-fluid" alt="">
        </div>
-
+       <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
+         <h3>Katalog Kelas</h3>
+         <p class="font-italic">
+           " Barang siapa tidak mau merasakan pahitnya belajar, ia akan merasakan hinanya kebodohan sepanjang hidupnya"
+           <br>
+           --Imam Syafi'i rahimahullah--
+         </p>
+         <ul>
+           <li><i class="icofont-check-circled"></i>Tersedia Kelas <b>GRATIS</b> dan berbayar</li>
+           <li><i class="icofont-check-circled"></i>Tersedia Kelas Offline di wilayah kota Kendari dan sekitarnya</li>
+           <li><i class="icofont-check-circled"></i>Di bimbing langsung oleh tenaga pengajar yang sudah berpengalaman di bidangnya dan sudah sering menangani proyek tentang pengembangan Aplikasi web dan mobile</li>
+           <li><i class="icofont-check-circled"></i>Bisa belajar di mana saja dan kapan saja dengan waktu yang fleksibel</li>
+           <li><i class="icofont-check-circled"></i>Berkesempatan untuk gabung dalam proyek yang di akusisi oleh kendari coding dan technoreative</li>
+         </ul>
+         <a href="#" class="read-more">Lihat Katalog Kelas<i class="icofont-long-arrow-right"></i></a>
+       </div>
      </div>
-   </section><!-- End About Section -->
+   </section>
+   <!-- End About Section -->
 
    <!-- ======= Counts Section ======= -->
    <section id="counts" class="counts">
@@ -151,7 +149,8 @@
        </div>
 
      </div>
-   </section><!-- End Services Section -->
+   </section>
+   <!-- End Services Section -->
 
    <!-- ======= Features Section ======= -->
    <section id="features" class="features">
@@ -191,11 +190,13 @@
        </div>
 
      </div>
-   </section><!-- End Features Section -->
+   </section>
+
+   <!-- End Features Section -->
 
    <!-- ======= Pricing Section ======= -->
    <section id="pricing" class="pricing section-bg">
-     <div class="container" data-aos="fade-up">
+     <div class="container-fluid mx-4" data-aos="fade-up">
 
        <div class="section-title">
          <h2>Harga</h2>
@@ -204,80 +205,28 @@
 
        <div class="row">
 
-         <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-           <div class="box">
-             <h3>GRATIS</h3>
-             <h4><sup></sup>0<span></span></h4>
-             <ul>
-               <li>Channel Youtube Kendari Coding</li>
-               <li>Artikel Website</li>
-               <li>Kelas Gratis</li>
-               <li class="na">Kelas Online Berbayar</li>
-               <li class="na">Kelas Tatap Muka</li>
-             </ul>
-             <div class="btn-wrap">
-               <a href="#" class="btn-buy">Pesan Sekarang</a>
-             </div>
-           </div>
+         <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="100">
+         <?php include 'kartubeli.php' ?>
          </div>
 
          <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
-           <div class="box featured">
-             <h3>PAKET ONLINE</h3>
-             <h4>680 K<span><br> (Akses Selamanya)</span></h4>
-             <ul>
-               <li>Channel Youtube Kendari Coding</li>
-               <li>Artikel Website</li>
-               <li>Kelas Gratis</li>
-               <li>Kelas Online Berbayar</li>
-               <li class="na">Kelas Tatap Muka</li>
-             </ul>
-             <div class="btn-wrap">
-               <a href="#" class="btn-buy">Pesan Sekarang</a>
-             </div>
-           </div>
+           <?php include 'kartubeli1.php' ?>
          </div>
 
          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-           <div class="box">
-             <h3>PAKET OFFLINE</h3>
-             <h4>980 K<span><br> (Paket 8 Minggu)</span></h4>
-             <ul>
-               <li>Channel Youtube Kendari Coding</li>
-               <li>Artikel Website</li>
-               <li>Kelas Gratis</li>
-               <li>Kelas Online Berbayar</li>
-               <li>Kelas Tatap Muka</li>
-             </ul>
-             <div class="btn-wrap">
-               <a href="#" class="btn-buy">Pesan Sekarang</a>
-             </div>
-           </div>
+           <?php include 'kartubeli2.php' ?>
          </div>
 
          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
-           <div class="box">
-             <span class="advanced">khusus</span>
-             <h3>PAKET JASA APP WEB / MOBILE</h3>
-             <h4><sup>Disesuaikan</sup><span></span></h4>
-             <ul>
-               <li>Survey Kebutuhan</li>
-               <li>Desain Aplikasi / web</li>
-               <li>Coding Aplikasi / web</li>
-               <li>Uji Coba dan Revisi</li>
-               <li>Training Penggunaan Aplikasi</li>
-               <li>Buku Panduan</li>
-             </ul>
-             <div class="btn-wrap">
-               <a href="#" class="btn-buy">Pesan Sekarang</a>
-             </div>
-           </div>
+         <?php include 'kartubeli3.php' ?>
          </div>
 
        </div>
 
      </div>
-   </section><!-- End Pricing Section -->
+
+   </section>
+   <!-- End Pricing Section -->
 
 
 
@@ -304,6 +253,7 @@
          </div>
        </div>
 
+       <!-- awalportofolio -->
        <div class="row portfolio-container">
 
          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
@@ -463,7 +413,8 @@
        </div>
 
      </div>
-   </section><!-- End Portfolio Section -->
+   </section>
+   <!-- End Portfolio Section -->
 
 
 
@@ -478,20 +429,20 @@
 
        <div class="owl-carousel testimonials-carousel">
 
-       <?php foreach ($data_testimoni as $rows) :?>
+         <?php foreach ($data_testimoni as $rows) : ?>
 
-         <div class="testimonial-item">
-           <p>
-             <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-             <?php echo $rows->pesan; ?>
-             <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-           </p>
-           <img src="<?php echo base_url(); ?>assets/template/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-           <h3><?php echo $rows->penulis; ?></h3>
-           <h4><?php echo $rows->penulis; ?></h4>
-         </div>
+           <div class="testimonial-item">
+             <p>
+               <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+               <?php echo $rows->pesan; ?>
+               <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+             </p>
+             <img src="<?php echo base_url(); ?>assets/template/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+             <h3><?php echo $rows->penulis; ?></h3>
+             <h4><?php echo $rows->penulis; ?></h4>
+           </div>
 
-         <?php endforeach;?>
+         <?php endforeach; ?>
 
        </div>
 
