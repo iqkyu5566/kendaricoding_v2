@@ -25,7 +25,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 */
 // $config['base_url'] = 'http://localhost/garuda_crud_generator/';
 // $config['base_url'] = 'http://localhost:8080/admin_kc/';
-$config['base_url'] = 'http://localhost/kendaricoding_v2';
+$config['base_url'] = 'http://localhost/kendaricoding_v2/';
 
 /*
 |--------------------------------------------------------------------------
