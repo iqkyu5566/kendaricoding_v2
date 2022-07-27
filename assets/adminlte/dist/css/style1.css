@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&displayswap');
+*
+{
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+body
+{
+    overflow: hidden !important;
+}
+section
+{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    min-height: 100vh !important;
+    background: linear-gradient(to bottom, #fde008, #d6fa0e) !important;
+}
+section .color
+{
+    position: absolute !important;
+    filter: blur(150px) !important;
+}
+section .color:nth-child(1)
+{
+    top: -350px !important;
+    width: 600px !important;
+    height: 600px !important;
+    background: #fde008 !important;
+}
+section .color:nth-child(2)
+{
+    bottom: -150px !important;
+    left: 100px !important;
+    width: 500px !important;
+    height: 500px !important;
+    background: #fde008 !important;
+}
+section .color:nth-child(3)
+{
+    bottom: 50px !important;
+    right: 100px !important;
+    width: 300px !important;
+    height: 300px !important;
+    background: #eafd15 !important;
+}
+.box
+{
+    position: relative !important;
+    width: 400px !important;
+    min-height: 400px !important;
+
+}
+.box .square
+{
+    position: absolute !important;
+    backdrop-filter: blur(5px) !important;
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1) !important;
+    border: 1px solid rgba(255,255,255,0.5) !important;
+    border-right: 1px solid rgba(255,255,255,0.2) !important;
+    border-bottom: 1px solid rgba(255,255,255,0.2) !important;
+    background: rgba(255,255,255,0.1) !important;
+    border-radius: 10px !important;
+    animation: animate 10s linear infinite !important;
+    animation-delay:calc(-1s * var(--i)) !important;
+}
+@keyframes animate
+{
+    0%,100%
+    {
+        transform: translateY(-40px) !important;
+    }
+    50%
+    {
+        transform: translateY(40px) !important;
+    }
+}
+.box .square:nth-child(1)
+{
+    top: -50px !important;
+    right: -60px !important;
+    width: 100px !important;
+    height: 100px !important;
+}
+.box .square:nth-child(2)
+{
+    top: 150px !important;
+    left: -100px !important;
+    width: 120px !important;
+    height: 120px !important;
+    z-index: 2 !important;
+}
+.box .square:nth-child(3)
+{
+    bottom: 50px !important;
+    right: -60px !important;
+    width: 80px !important;
+    height: 80px !important;
+    z-index: 2 !important;
+}
+.box .square:nth-child(4)
+{
+    bottom: 50px !important;
+    left: 100px !important;
+    width: 50px !important;
+    height: 50px !important;
+    
+}
+.box .square:nth-child(5)
+{
+    top: -80px !important;
+    left: 140px !important;
+    width: 60px !important;
+    height: 60px !important;
+    
+}
+.container
+{
+    position: relative !important;
+    width: 400px !important;
+    min-height: 400px !important;
+    background: rgba(255,255,255,0.1) !important;
+    border-radius: 10px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    backdrop-filter: blur(5px) !important;
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1) !important;
+    border: 1px solid rgba(255,255,255,0.5) !important;
+    border-right: 1px solid rgba(255,255,255,0.2) !important;
+    border-bottom: 1px solid rgba(255,255,255,0.2) !important;
+}
+.form
+{
+    position: relative !important;
+    width: 100% !important;
+    height: 100% !important;
+    padding: 40px !important;
+}
+.form h2
+{
+    position: relative !important ;
+    color: rgb(8, 8, 8) !important;
+    font-size: 24px !important;
+    font-weight: 600 !important;
+    letter-spacing: 1px !important;
+    margin-bottom: 40px !important;
+}
+.form h2::before
+{
+    content:'' !important;
+    position: absolute !important;
+    left: 0 !important;
+    bottom: -10px !important;
+    width: 80px !important;
+    height: 4px !important;
+    background: rgb(8, 8, 8) !important;
+
+}
+.form .inputBox
+{
+    width:100% !important;
+    margin-top: 20px !important;
+}
+.form .inputBox input
+{
+    width: 100% !important;
+    background: rgba(255,255,255,0.2) !important;
+    border: none !important;
+    outline: none !important;
+    padding: 10px 20px !important;
+    border-radius: 35px !important;
+    border: 1px solid rgba(255,255,255,0.5) !important;
+    border-right: 1px solid rgba(255,255,255,0.2) !important;
+    border-bottom: 1px solid rgba(255,255,255,0.2) !important;
+    font-size: 16px !important;
+    letter-spacing: 1px !important;
+    color:rgb(8, 8, 8) !important;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5) !important;
+}
+.form .inputBox input::placeholder
+{
+    color: #000 !important;
+}
+.form .inputBox input[type="submit"]
+{
+    background: #000 !important;
+    color: #666 !important;
+    max-width: 100px !important;
+    cursor: pointer !important;
+    margin-bottom: 20px !important;
+    font-weight: 600 !important;
+}
+.forget
+{
+    margin-top: 5px !important ;
+    color: #fff !important; 
+}
+.forget a
+{
+    color: #fff !important;
+    font-weight: 600 !important;
+}
+
