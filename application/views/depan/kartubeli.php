@@ -1,3 +1,4 @@
+<!-- Testing -->
 <link href="<?php echo base_url(); ?>assets/ombakcss/kartubeli.css" rel="stylesheet">
 
 <div class="card12">
