@@ -34,7 +34,27 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
+<style>
+  .goog-te-gadget-icon {
+  display:none;
+}
+.goog-te-gadget-simple {
+    background-color: #ecebf0 !important;
+    border:0 !important;
+    border-radius: 20px !important;
+    font-size: 10pt;
+    font-weight:800;
+    display: inline-block;
+    padding:10px 10px !important;
+    cursor: pointer;
+    zoom: 1;
+}
 
+.goog-te-gadget-simple  span {
+   color:#3e3065 !important;
+
+}
+</style>
 <body>
 
   <!-- ======= Header ======= -->
@@ -49,35 +69,22 @@
 
           <nav class="nav-menu d-none d-lg-block">
             <ul>
-              
-                <?php
-                    include "depan/config.php";
-                ?>
-
-              <li class="active"><a href="#hero"><?= $bhs['d'] ?></a></li>
-              <li><a href="#about"><?= $bhs['e'] ?></a></li>
-              <li><a href="#services"><?= $bhs['f'] ?></a></li>
-              <li><a href="#portfolio"><?= $bhs['g'] ?></a></li>
-              <li><a href="#team"><?= $bhs['h'] ?></a></li>
-              <li><a href="#team"><?= $bhs['i'] ?></a></li>
-              <li><a href="#contact"><?= $bhs['j'] ?></a></li>
+              <li class="active"><a href="#hero">Beranda</a></li>
+              <li><a href="#about">Kelas</a></li>
+              <li><a href="#services">Layanan</a></li>
+              <li><a href="#portfolio">Portofolio</a></li>
+              <li><a href="#team">Tim</a></li>
+              <li><a href="#team">Alur Belajar</a></li>
+              <li><a href="#contact">Kontak</a></li>
+              <!-- <li class="translate" id="google_translate_element"></li> -->
 
             </ul>
           </nav><!-- .nav-menu -->
+          <a href="<?= base_url('auth/register'); ?>" class="get-started-btn scrollto">Daftar</a>
+          <a href="#" class="translate" id="google_translate_element"></a>
 
 
 
-          <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <?= $bhs['Bahasa'] ?>
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                <button class="dropdown-item" type="button"><a href="?bhs=bs"><?= $bhs['bhs_bs'] ?></a></button>
-                <button class="dropdown-item" type="button"><a href="?bhs=en"><?= $bhs['bhs_en'] ?></a></button>
-              </div>
-            </div>
-
-          <a href="<?= base_url('auth/register'); ?>" class="get-started-btn scrollto"><?= $bhs['daftar'] ?></a>
         </div>
       </div>
 
@@ -90,15 +97,16 @@
     <div class="container-fluid" data-aos="fade-up">
       <div class="row justify-content-center">
         <div class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h1><?= $bhs['title'] ?></h1>
-          <h2><?= $bhs['a'] ?>
+          <h1>Belajar Coding Lebih Mudah di Kendari Coding</h1>
+          <h2>Kami berlokasi di Kota Kendari serta fokus untuk melatih pembelajaran
+		pemrograman Web dan Mobile secara online dan offline
           </h2>
           <div class="row">
             <div class="col">
-              <a href="<?= base_url('auth/login'); ?>" class="btn-get-started scrollto"><?= $bhs['b'] ?></a>
+              <a href="<?= base_url('auth/login'); ?>" class="btn-get-started scrollto">Mulai Belajar</a>
             </div>
             <div class="col">
-              <a href="<?= base_url('pemesanan/pesanaplikasi'); ?>" class="btn-get-started scrollto"><?= $bhs['c'] ?></a>
+              <a href="<?= base_url('pemesanan/pesanaplikasi'); ?>" class="btn-get-started scrollto">Pesan Aplikasi</a>
             </div>
           </div>
         </div>
@@ -191,6 +199,9 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
+
+        
+  
   <script src="<?= base_url(); ?>assets/assets_web/template/vendor/jquery/jquery.min.js"></script>
   <script src="<?= base_url(); ?>assets/assets_web/template/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="<?= base_url(); ?>assets/assets_web/template/vendor/jquery.easing/jquery.easing.min.js"></script>
@@ -204,6 +215,21 @@
 
   <!-- Template Main JS File -->
   <script src="<?= base_url(); ?>assets/assets_web/template/js/main.js"></script>
+    <!-- ============Translate============= -->
+
+    <script type="text/javascript">
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({
+                defaultLanguange: 'in',
+                pageLanguage: 'in',
+                includedLanguages: 'bn,de,nl,en,es,it,fr,no',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false,
+                multilanguangePage: true}, 'google_translate_element')};
+            </script>
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+          <!-- ============Translate============= -->
 
 </body>
 
