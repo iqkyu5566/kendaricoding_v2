@@ -53,7 +53,6 @@
               <li><a href="#about">Kelas</a></li>
               <li><a href="#services">Layanan</a></li>
               <li><a href="#portfolio">Portofolio</a></li>
-              <li><a href="#team">Tim</a></li>
               <li><a href="#team">Alur Belajar</a></li>
               <li><a href="#contact">Kontak</a></li>
               
@@ -61,12 +60,7 @@
             </ul>
           </nav>
           <!-- .nav-menu -->
-          <a href="<?= base_url('auth/register'); ?>" class="get-started-btn scrollto">Daftar</a> 
- 
-          
-
-
-
+          <a href="<?= base_url('auth/register'); ?>" class="get-started-btn scrollto">Daftar</a>
         </div>
       </div>
 
@@ -75,7 +69,6 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
-
     <div class="container-fluid" data-aos="fade-up">
       <div class="row justify-content-center">
         <div class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
@@ -98,14 +91,13 @@
         </div>
       </div>
     </div>
-
   </section><!-- End Hero -->
-
   <main id="main">
 
     <?= $contents ?>
 
-  </main><!-- End #main -->
+  </main>
+  <!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
@@ -144,7 +136,6 @@
             <form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>
-            <?php include 'assets/translate.php' ?>
           </div>
 
         </div>
