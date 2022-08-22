@@ -1,31 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html bhs="en">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Kendari Coding - <?php echo $title; ?></title>
+  <title>Kendari Coding - <?= $title; ?></title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="<?php echo base_url(); ?>assets/assets_web/kendaricoding/img/favicon.png" rel="icon">
-  <link href="<?php echo base_url(); ?>assets/assets_web/kendaricoding/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="<?= base_url(); ?>assets/assets_web/kendaricoding/img/favicon.png" rel="icon">
+  <link href="<?= base_url(); ?>assets/assets_web/kendaricoding/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="<?php echo base_url(); ?>assets/assets_web/template/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="<?php echo base_url(); ?>assets/assets_web/template/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="<?php echo base_url(); ?>assets/assets_web/template/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="<?php echo base_url(); ?>assets/assets_web/template/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="<?php echo base_url(); ?>assets/assets_web/template/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="<?php echo base_url(); ?>assets/assets_web/template/vendor/aos/aos.css" rel="stylesheet">
+  <link href="<?= base_url(); ?>assets/assets_web/template/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="<?= base_url(); ?>assets/assets_web/template/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="<?= base_url(); ?>assets/assets_web/template/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="<?= base_url(); ?>assets/assets_web/template/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="<?= base_url(); ?>assets/assets_web/template/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="<?= base_url(); ?>assets/assets_web/template/vendor/aos/aos.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="<?php echo base_url(); ?>assets/assets_web/template/css/style.css" rel="stylesheet">
+  <link href="<?= base_url(); ?>assets/assets_web/template/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Techie - v2.0.0
@@ -45,22 +45,28 @@
         <div class="col-xl-9 d-flex align-items-center">
           <h1 class="logo mr-auto"><a href="index.html">KENDARI CODING</a></h1>
           <!-- Uncomment below if you prefer to use an image logo -->
-          <!-- <a href="index.html" class="logo mr-auto"><img src="<?php echo base_url(); ?>assets/assets_web/kendaricoding/img/logo.png" alt="" class="img-fluid"></a> -->
+          <!-- <a href="index.html" class="logo mr-auto"><img src="<?= base_url(); ?>assets/assets_web/kendaricoding/img/logo.png" alt="" class="img-fluid"></a> -->
 
           <nav class="nav-menu d-none d-lg-block">
             <ul>
               <li class="active"><a href="#hero">Beranda</a></li>
               <li><a href="#about">Kelas</a></li>
               <li><a href="#services">Layanan</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#team">Team</a></li>
+              <li><a href="#portfolio">Portofolio</a></li>
+              <li><a href="#team">Tim</a></li>
               <li><a href="#team">Alur Belajar</a></li>
               <li><a href="#contact">Kontak</a></li>
+              
 
             </ul>
-          </nav><!-- .nav-menu -->
+          </nav>
+          <!-- .nav-menu -->
+          <a href="<?= base_url('auth/register'); ?>" class="get-started-btn scrollto">Daftar</a> 
+ 
+          
 
-          <a href="<?= base_url('auth/register'); ?>" class="get-started-btn scrollto">Daftar</a>
+
+
         </div>
       </div>
 
@@ -73,9 +79,9 @@
     <div class="container-fluid" data-aos="fade-up">
       <div class="row justify-content-center">
         <div class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h1>Belajar Coding Lebih mudah di Kendari Coding</h1>
+          <h1>Belajar Coding Lebih Mudah di Kendari Coding</h1>
           <h2>Kami berlokasi di Kota Kendari serta fokus untuk melatih pembelajaran
-            pemrograman Web dan Mobile secara online dan offline
+		pemrograman Web dan Mobile secara online dan offline
           </h2>
           <div class="row">
             <div class="col">
@@ -87,8 +93,8 @@
           </div>
         </div>
         <div class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">
-          <!-- <img src="<?php echo base_url(); ?>assets/assets_web/template/img/hero-img.png" class="img-fluid animated" alt=""> -->
-          <img src="<?php echo base_url(); ?>assets/assets_web/belajar/5.png" class="img-fluid animated" alt="">
+          <!-- <img src="<?= base_url(); ?>assets/assets_web/template/img/hero-img.png" class="img-fluid animated" alt=""> -->
+          <img src="<?= base_url(); ?>assets/assets_web/belajar/5.png" class="img-fluid animated" alt="">
         </div>
       </div>
     </div>
@@ -97,7 +103,7 @@
 
   <main id="main">
 
-    <?php echo $contents ?>
+    <?= $contents ?>
 
   </main><!-- End #main -->
 
@@ -138,6 +144,7 @@
             <form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>
+            <?php include 'assets/translate.php' ?>
           </div>
 
         </div>
@@ -175,19 +182,23 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="<?php echo base_url(); ?>assets/assets_web/template/vendor/jquery/jquery.min.js"></script>
-  <script src="<?php echo base_url(); ?>assets/assets_web/template/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="<?php echo base_url(); ?>assets/assets_web/template/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="<?php echo base_url(); ?>assets/assets_web/template/vendor/php-email-form/validate.js"></script>
-  <script src="<?php echo base_url(); ?>assets/assets_web/template/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="<?php echo base_url(); ?>assets/assets_web/template/vendor/counterup/counterup.min.js"></script>
-  <script src="<?php echo base_url(); ?>assets/assets_web/template/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="<?php echo base_url(); ?>assets/assets_web/template/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="<?php echo base_url(); ?>assets/assets_web/template/vendor/venobox/venobox.min.js"></script>
-  <script src="<?php echo base_url(); ?>assets/assets_web/template/vendor/aos/aos.js"></script>
+
+        
+  
+  <script src="<?= base_url(); ?>assets/assets_web/template/vendor/jquery/jquery.min.js"></script>
+  <script src="<?= base_url(); ?>assets/assets_web/template/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="<?= base_url(); ?>assets/assets_web/template/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="<?= base_url(); ?>assets/assets_web/template/vendor/php-email-form/validate.js"></script>
+  <script src="<?= base_url(); ?>assets/assets_web/template/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="<?= base_url(); ?>assets/assets_web/template/vendor/counterup/counterup.min.js"></script>
+  <script src="<?= base_url(); ?>assets/assets_web/template/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="<?= base_url(); ?>assets/assets_web/template/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="<?= base_url(); ?>assets/assets_web/template/vendor/venobox/venobox.min.js"></script>
+  <script src="<?= base_url(); ?>assets/assets_web/template/vendor/aos/aos.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="<?php echo base_url(); ?>assets/assets_web/template/js/main.js"></script>
+  <script src="<?= base_url(); ?>assets/assets_web/template/js/main.js"></script>
+  <!-- Translate -->
 
 </body>
 
