@@ -34,27 +34,7 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
-<style>
-  .goog-te-gadget-icon {
-  display:none;
-}
-.goog-te-gadget-simple {
-    background-color: #ecebf0 !important;
-    border:0 !important;
-    border-radius: 20px !important;
-    font-size: 10pt;
-    font-weight:800;
-    display: inline-block;
-    padding:10px 10px !important;
-    cursor: pointer;
-    zoom: 1;
-}
 
-.goog-te-gadget-simple  span {
-   color:#3e3065 !important;
-
-}
-</style>
 <body>
 
   <!-- ======= Header ======= -->
@@ -76,12 +56,14 @@
               <li><a href="#team">Tim</a></li>
               <li><a href="#team">Alur Belajar</a></li>
               <li><a href="#contact">Kontak</a></li>
-              <!-- <li class="translate" id="google_translate_element"></li> -->
+              
 
             </ul>
-          </nav><!-- .nav-menu -->
-          <a href="<?= base_url('auth/register'); ?>" class="get-started-btn scrollto">Daftar</a>
-          <a href="#" class="translate" id="google_translate_element"></a>
+          </nav>
+          <!-- .nav-menu -->
+          <a href="<?= base_url('auth/register'); ?>" class="get-started-btn scrollto">Daftar</a> 
+ 
+          
 
 
 
@@ -162,6 +144,7 @@
             <form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>
+            <?php include 'assets/translate.php' ?>
           </div>
 
         </div>
@@ -215,21 +198,7 @@
 
   <!-- Template Main JS File -->
   <script src="<?= base_url(); ?>assets/assets_web/template/js/main.js"></script>
-    <!-- ============Translate============= -->
-
-    <script type="text/javascript">
-            function googleTranslateElementInit() {
-              new google.translate.TranslateElement({
-                defaultLanguange: 'in',
-                pageLanguage: 'in',
-                includedLanguages: 'bn,de,nl,en,es,it,fr,no',
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-                autoDisplay: false,
-                multilanguangePage: true}, 'google_translate_element')};
-            </script>
-            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-          <!-- ============Translate============= -->
+  <!-- Translate -->
 
 </body>
 

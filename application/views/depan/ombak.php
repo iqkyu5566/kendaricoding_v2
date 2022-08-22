@@ -1,4 +1,4 @@
-        <link href="<?php echo base_url(); ?>assets/ombakcss/ombak.css" rel="stylesheet">
+        <link href="<?= base_url(); ?>assets/ombakcss/ombak.css" rel="stylesheet">
 
 
         <div class="wave" id="wave1" style="--i:1;"></div>
