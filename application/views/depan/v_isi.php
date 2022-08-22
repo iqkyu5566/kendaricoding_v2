@@ -3,7 +3,7 @@
    <!-- ======= About Section ======= -->
    <section id="about" class="about">
      <div class="container">
-       <?php include 'ombak.php' ?>
+     <?php include 'assets/translate.php' ?>
        <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="150">
          <img src="<?php echo base_url(); ?>assets/template/img/about.jpg" class="img-fluid" alt="">
        </div>
@@ -26,7 +26,6 @@
      </div>
    </section>
    <!-- End About Section -->
-
    <!-- ======= Counts Section ======= -->
    <section id="counts" class="counts">
      <div class="container">
