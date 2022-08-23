@@ -63,7 +63,6 @@
           <a href="<?= base_url('auth/register'); ?>" class="get-started-btn scrollto">Daftar</a>
         </div>
       </div>
-
     </div>
   </header><!-- End Header -->
 
@@ -91,6 +90,7 @@
         </div>
       </div>
     </div>
+    <?php include 'depan/ombak.php'; ?>
   </section><!-- End Hero -->
   <main id="main">
 
