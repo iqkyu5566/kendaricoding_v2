@@ -2,7 +2,7 @@
     position: fixed;
     bottom: calc(53px + 16px);
     right: 16px;
-    z-index: 99999;
+    /* z-index: 99999; */
 }
 
 .goog-te-gadget {
@@ -54,11 +54,10 @@
 .goog-te-gadget-icon {
     display: none;
 }
-
-.goog-te-banner-frame.skiptranslate {
-    display: none;
-}
-
+.goog-te-banner-frame.skiptranslate 
+{
+    display: none!important;
+} 
 body {
-    top: 0px;
+    top: 0px!important;
 }

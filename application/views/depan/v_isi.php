@@ -3,7 +3,6 @@
    <!-- ======= About Section ======= -->
    <section id="about" class="about">
      <div class="container">
-     <?php include 'assets/translate.php' ?>
        <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="150">
          <img src="<?php echo base_url(); ?>assets/template/img/about.jpg" class="img-fluid" alt="">
        </div>
@@ -59,6 +58,7 @@
 
    <!-- ======= Services Section ======= -->
    <section id="services" class="services section-bg">
+   <?php include 'assets/translate.php' ?>
      <div class="container" data-aos="fade-up">
 
        <div class="section-title">
