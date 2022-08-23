@@ -204,20 +204,20 @@
 
        <div class="row">
 
-         <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="100">
+         <div class="col-lg-3 col-md-6 mt-4 mt-md-0 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
          <?php include 'kartubeli.php' ?>
          </div>
 
-         <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
-           <?php include 'kartubeli1.php' ?>
+         <div class="col-lg-3 col-md-6 mt-4 mt-md-0 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
+         <?php include 'kartubeli.php' ?>
          </div>
 
-         <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-           <?php include 'kartubeli2.php' ?>
+         <div class="col-lg-3 col-md-6 mt-4 mt-md-0 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="300">
+         <?php include 'kartubeli.php' ?>
          </div>
 
-         <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
-         <?php include 'kartubeli3.php' ?>
+         <div class="col-lg-3 col-md-6 mt-4 mt-md-0 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="400">
+         <?php include 'kartubeli.php' ?>
          </div>
 
        </div>
