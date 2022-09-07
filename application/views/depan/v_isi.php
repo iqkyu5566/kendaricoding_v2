@@ -55,10 +55,192 @@
 
      </div>
    </section><!-- End Counts Section -->
+   <!-- punya cindi -->
+
+   <head>
+
+
+     <script type="text/javascript" async="" src="https://widget.intercom.io/widget/ei5f5f8i"></script>
+     <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+     <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-WCYD3HR7G7&amp;l=dataLayer&amp;cx=c"></script>
+     <script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/duyHVVR9Brf6N2GewjkPRfsA/recaptcha__id.js" crossorigin="anonymous" integrity="sha384-XXDXwVaTKdkODRMY8JK5fYhvze8lwam7M0qwZBtLH979nqZOjf2t6MaBG+1z1r7Q"></script>
+     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-146603038-1"></script>
+     <script>
+       window.dataLayer = window.dataLayer || [];
+
+       function gtag() {
+         dataLayer.push(arguments);
+       }
+       gtag('js', new Date());
+
+       gtag('config', 'UA-146603038-1');
+     </script>
+
+
+     <script>
+       (function(h, o, t, j, a, r) {
+         h.hj = h.hj || function() {
+           (h.hj.q = h.hj.q || []).push(arguments)
+         };
+         h._hjSettings = {
+           hjid: 1587807,
+           hjsv: 6
+         };
+         a = o.getElementsByTagName('head')[0];
+         r = o.createElement('script');
+         r.async = 1;
+         r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+         a.appendChild(r);
+       })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+     </script>
+     <script async="" src="https://static.hotjar.com/c/hotjar-1587807.js?sv=6"></script>
+     <meta charset="utf-8">
+     <meta http-equiv="x-ua-compatible" content="ie=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <title>Belajar Coding dan Design Dari Mentor Berpengalaman — BuildWith Angga</title>
+     <meta name="description" content="Tempat belajar coding dan design gratis secara online dari mentor berpengalaman dan lebih terarah untuk mengembangkan skills baru yang digunakan untuk mendapatkan pekerjaan di bidang IT.">
+     <meta name="keywords" content="Web Design, Web Development, UI UX Design, Android Development, Full-Stack Developer">
+     <!-- <meta name="author" content="BuildWith Angga"> -->
+     <!-- <meta image="https://buildwithangga.com/themes/front/images/belajar_design_coding_online_di_buildwith_angga.png"> -->
+     <!-- <meta property="og:type" content="article">
+<meta property="og:image" content="https://buildwithangga.com/themes/front/images/belajar_design_coding_online_di_buildwith_angga.png">
+<meta property="og:title" content="Belajar Coding dan Design Dari Mentor Berpengalaman — BuildWith Angga">
+<meta property="og:site_name" content="BuildWith Angga">
+<meta property="og:url" content="https://buildwithangga.com/"> -->
+     <meta property="og:description" content="Tempat belajar coding dan design gratis secara online dari mentor berpengalaman dan lebih terarah untuk mengembangkan skills baru yang digunakan untuk mendapatkan pekerjaan di bidang IT.">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://buildwithangga.com/themes/front/css/nd.css">
+
+     <link rel="icon" type="image/png" href="https://buildwithangga.com/themes/front/images/favicon.ico">
+     <link rel="apple-touch-icon" href="https://buildwithangga.com/themes/front/images/favicon.ico">
+     <link rel="stylesheet" href="https://buildwithangga.com/tippy/css/tippy.css">
+     <link rel="stylesheet" href="https://buildwithangga.com/tippy/css/shift-away.css">
+     <style>
+       .modal-content {
+         border-radius: 16px;
+         border: none;
+       }
+
+       .modal-header {
+         background-color: #f6f8fd;
+         border-radius: 16px 16px 0 0;
+       }
+
+       .modal .modal-body .video-iframe {
+         border: none;
+         border-radius: 0 0 16px 16px;
+       }
+
+       .modal .modal-body .embed-responsive {
+         height: 100%;
+       }
+     </style>
+     <script async="" src="https://script.hotjar.com/modules.d5eb3c97b67a0b8958ff.js" charset="utf-8"></script>
+     <style type="text/css">
+       iframe#_hjRemoteVarsFrame {
+         display: none !important;
+         width: 1px !important;
+         height: 1px !important;
+         opacity: 0 !important;
+         pointer-events: none !important;
+       }
+     </style>
+   </head>
+   <div class="container-fluid">
+     <div class="mb-4">
+       <div class="front-text-group ">
+         <p class="text-support text-green">Follow The Roadmap</p>
+         <h2 class="header-primary mb-0">Alur Belajar Terbaik <br class="desktop">
+           Untuk Membangun Karir</h2>
+         <p class="capt"></p>
+       </div>
+     </div>
+     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-5">
+       <div class="col position-relative stack-card-group">
+         <div class="course-card-responsive gap-3">
+           <div class="d-flex flex-row flex-md-column align-items-start">
+             <img src="<?php echo base_url(); ?>assets/assets_web/template/img/kursus1.jpeg" alt="" class="img-fluid">
+             <div class="course-detail mt-0 mt-md-3">
+               <div class="course-name">
+                 Berkarir Sebagai seorang progammer
+               </div>
+               <p>
+                 20 courses • 77 hours
+               </p>
+               <!-- <a href="https://buildwithangga.com/journey/become-user-interface-designer" class="stretched-link"></a> -->
+             </div>
+           </div>
+           <div class="d-flex align-items-center justify-content-end justify-content-md-start gap-2 roadmap-tools">
+             <!-- <img src="https://buildwithangga.com/themes/front/images/logo/figma-logomark.svg" alt="">
+        <img src="https://buildwithangga.com/themes/front/images/logo/maze-logomark.svg" alt="">
+        <img src="https://buildwithangga.com/themes/front/images/logo/dribbble-logomark.svg" alt="">
+        <img src="https://buildwithangga.com/themes/front/images/logo/whimsical.svg" alt="">
+        <img src="https://buildwithangga.com/themes/front/images/logo/notion-2.svg" alt=""> -->
+           </div>
+         </div>
+         <div class="stack-card-ornament sco-1"></div>
+         <div class="stack-card-ornament sco-2"></div>
+       </div>
+       <div class="col position-relative stack-card-group">
+         <div class="course-card-responsive gap-3">
+           <div class="d-flex flex-row flex-md-column align-items-start">
+             <img src="<?php echo base_url(); ?>assets/assets_web/template/img/kursus2.jpeg" alt="" class="img-fluid">
+             <div class="course-detail mt-0 mt-md-3">
+               <div class="course-name">
+                 Berkarir Sebagai Full-Stack Developer
+               </div>
+               <p>
+                 12 courses • 34 hours
+               </p>
+               <!-- <a href="https://buildwithangga.com/journey/become-front-end-developer" class="stretched-link"></a> -->
+             </div>
+           </div>
+           <div class="d-flex align-items-center justify-content-end justify-content-md-start roadmap-tools">
+             <!-- <img src="https://buildwithangga.com/themes/front/images/logo/javascript-logomark-rounded.svg" alt="">
+        <img src="https://buildwithangga.com/themes/front/images/logo/figma-logomark.svg" alt="">
+        <img src="https://buildwithangga.com/themes/front/images/logo/nodejs.svg" alt="">
+        <img src="https://buildwithangga.com/themes/front/images/logo/mongodb-icon-1.svg" alt=""> -->
+           </div>
+         </div>
+         <div class="stack-card-ornament sco-1"></div>
+         <div class="stack-card-ornament sco-2"></div>
+       </div>
+       <div class="col position-relative stack-card-group">
+         <div class="course-card-responsive gap-3">
+           <div class="d-flex flex-row flex-md-column align-items-start">
+             <img src="https://buildwithangga.com/themes/front/images/thumbnail/thumbnail_roadmap-3.webp" class="thumbnail-course" alt="Roadmap Kelas di BuildWith Angga">
+             <div class="course-detail mt-0 mt-md-3">
+               <div class="course-name">
+                 Berkarir Sebagai Full-Stack Developer (Web/Mobile)
+               </div>
+               <p>
+                 13 courses • 65 hours
+               </p>
+               <!-- <a href="https://buildwithangga.com/journey/become-flutter-apps-developer" class="stretched-link"></a> -->
+             </div>
+           </div>
+           <div class="d-flex align-items-center justify-content-end justify-content-md-start gap-2 roadmap-tools">
+             <!-- <img src="https://buildwithangga.com/themes/front/images/logo/figma-logomark.svg" alt="">
+        <img src="https://buildwithangga.com/themes/front/images/logo/laravel.svg" alt="">
+        <img src="https://buildwithangga.com/themes/front/images/logo/flutter.svg" alt="">
+        <img src="https://buildwithangga.com/themes/front/images/logo/firebase.svg" alt="">
+        <img src="https://buildwithangga.com/themes/front/images/logo/mysql.svg" alt=""> -->
+           </div>
+         </div>
+         <div class="stack-card-ornament sco-1"></div>
+         <div class="stack-card-ornament sco-2"></div>
+       </div>
+     </div>
+   </div>
+   <!-- end punya cindi -->
+
 
    <!-- ======= Services Section ======= -->
    <section id="services" class="services section-bg">
-   <?php include 'assets/translate.php' ?>
+     <?php include 'assets/translate.php' ?>
      <div class="container" data-aos="fade-up">
 
        <div class="section-title">
@@ -205,19 +387,19 @@
        <div class="row">
 
          <div class="col-lg-3 col-md-6 mt-4 mt-md-0 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-         <?php include 'kartubeli.php' ?>
+           <?php include 'kartubeli.php' ?>
          </div>
 
          <div class="col-lg-3 col-md-6 mt-4 mt-md-0 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
-         <?php include 'kartubeli.php' ?>
+           <?php include 'kartubeli.php' ?>
          </div>
 
          <div class="col-lg-3 col-md-6 mt-4 mt-md-0 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="300">
-         <?php include 'kartubeli.php' ?>
+           <?php include 'kartubeli.php' ?>
          </div>
 
          <div class="col-lg-3 col-md-6 mt-4 mt-md-0 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="400">
-         <?php include 'kartubeli.php' ?>
+           <?php include 'kartubeli.php' ?>
          </div>
 
        </div>
