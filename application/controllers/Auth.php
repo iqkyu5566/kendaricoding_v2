@@ -49,4 +49,27 @@ class Auth extends CI_Controller
     {
         $this->load->view('auth/register/sign-up');
     }
+    function daftar()
+    {
+        // $nama = $this->input->post('name');
+        // $email = $this->input->post('email');
+
+        // echo "<pre>";
+        // print_r($nama);
+        // die;
+        // echo "</pre>";
+        $data = array(
+            'name' => $this->input->post('name'),
+            'email' => $this->input->post('email'),
+            'password' => md5($this->input->post('password')),
+            'test' => $this->input->post('test'),
+            
+            
+        );
+
+        $this->db->insert('tbl_daftar1', $data);
+
+        redirect('Auth');
+    
+    }
 }
