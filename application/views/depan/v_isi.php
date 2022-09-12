@@ -25,6 +25,77 @@
      </div>
    </section>
    <!-- End About Section -->
+
+   <!-- API YOUTUBE START -->
+   <?php
+function get_CURL($url)
+{
+$curl = curl_init();
+curl_setopt($curl, CURLOPT_URL, $url);
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+$result = curl_exec($curl);
+curl_close($curl);
+
+  
+return json_decode($result, true);
+}
+
+$result = get_CURL('https://www.googleapis.com/youtube/v3/channels?part=snippet,statistics&id=UC10ulOnRz2JO5jjPQFMltew&key=AIzaSyB8JXGNkcaxa35VSvmB_EgHx22qX0_EFXg');
+
+$youtubeProfilePic = $result['items'] [0] ['snippet'] ['thumbnails'] ['medium'] ['url'];
+$channelName = $result['items'] [0] ['snippet'] ['title'];
+$subscriber =  $result['items'] [0] ['statistics'] ['subscriberCount'];
+
+
+//latest video
+$urlLatestVideo = 'https://www.googleapis.com/youtube/v3/search?key=AIzaSyB8JXGNkcaxa35VSvmB_EgHx22qX0_EFXg&channelId=UC10ulOnRz2JO5jjPQFMltew&maxResults=4&order=date&part=snippet';
+$result = get_CURL($urlLatestVideo);
+$latestVideoId = $result['items'] [0] ['id'] ['videoId'];
+?>
+
+ <main id="main">
+
+
+  <section class="social bg-light" id="social" >
+    <div class="row pt-4 mb-4">
+
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <div class="col text-center">
+        <h2>Social Media</h2>
+       </div>
+
+
+      <div class="row justify-content-center">
+        <div class="col-md-5">
+          <div class="row">
+            <div class="col-md-4">
+            <img src="<?= $youtubeProfilePic?>" width="100" class="rounded-circle img-thumbnail">
+            </div>
+            <div class="col-md-8">
+              <h5><?= $channelName; ?></h5>
+              <p><?= $subscriber?> Subscriber</p>
+            </div>
+          </div>
+          <div class="row mt-3 pb-3">
+            <div class="col">
+              <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/<?= $latestVideoId; ?>?rel=0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+   </div>
+  </section>
+  <!-- API YOUTUBE END -->
+
+
+  
+
    <!-- ======= Counts Section ======= -->
    <section id="counts" class="counts">
      <div class="container">
@@ -55,6 +126,10 @@
 
      </div>
    </section><!-- End Counts Section -->
+
+
+
+
 
    <!-- ======= Services Section ======= -->
    <section id="services" class="services section-bg">
@@ -193,6 +268,8 @@
 
    <!-- End Features Section -->
 
+
+    
    <!-- ======= Pricing Section ======= -->
    <section id="pricing" class="pricing section-bg">
      <div class="container-fluid mx-4" data-aos="fade-up">
