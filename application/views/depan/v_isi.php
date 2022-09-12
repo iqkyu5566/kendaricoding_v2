@@ -282,7 +282,82 @@ $latestVideoId = $result['items'] [0] ['id'] ['videoId'];
        <div class="col position-relative stack-card-group">
          <div class="course-card-responsive gap-3">
            <div class="d-flex flex-row flex-md-column align-items-start">
-             <img src="https://buildwithangga.com/themes/front/images/thumbnail/thumbnail_roadmap-3.webp" class="thumbnail-course" alt="Roadmap Kelas di BuildWith Angga">
+           <img src="<?php echo base_url(); ?>assets/assets_web/template/img/kursus2.jpeg" alt="" class="img-fluid">
+             <div class="course-detail mt-0 mt-md-3">
+               <div class="course-name">
+                 Berkarir Sebagai Full-Stack Developer (Web/Mobile)
+               </div>
+               <p>
+                 13 courses • 65 hours
+               </p>
+               <!-- <a href="https://buildwithangga.com/journey/become-flutter-apps-developer" class="stretched-link"></a> -->
+             </div>
+           </div>
+           <div class="d-flex align-items-center justify-content-end justify-content-md-start gap-2 roadmap-tools">
+             <!-- <img src="https://buildwithangga.com/themes/front/images/logo/figma-logomark.svg" alt="">
+        <img src="https://buildwithangga.com/themes/front/images/logo/laravel.svg" alt="">
+        <img src="https://buildwithangga.com/themes/front/images/logo/flutter.svg" alt="">
+        <img src="https://buildwithangga.com/themes/front/images/logo/firebase.svg" alt="">
+        <img src="https://buildwithangga.com/themes/front/images/logo/mysql.svg" alt=""> -->
+           </div>
+         </div>
+         <div class="stack-card-ornament sco-1"></div>
+         <div class="stack-card-ornament sco-2"></div>
+       </div>
+       <div class="col position-relative stack-card-group">
+         <div class="course-card-responsive gap-3">
+           <div class="d-flex flex-row flex-md-column align-items-start">
+           <img src="<?php echo base_url(); ?>assets/assets_web/template/img/kursus2.jpeg" alt="" class="img-fluid">
+             <div class="course-detail mt-0 mt-md-3">
+               <div class="course-name">
+                 Berkarir Sebagai Full-Stack Developer (Web/Mobile)
+               </div>
+               <p>
+                 13 courses • 65 hours
+               </p>
+               <!-- <a href="https://buildwithangga.com/journey/become-flutter-apps-developer" class="stretched-link"></a> -->
+             </div>
+           </div>
+           <div class="d-flex align-items-center justify-content-end justify-content-md-start gap-2 roadmap-tools">
+             <!-- <img src="https://buildwithangga.com/themes/front/images/logo/figma-logomark.svg" alt="">
+        <img src="https://buildwithangga.com/themes/front/images/logo/laravel.svg" alt="">
+        <img src="https://buildwithangga.com/themes/front/images/logo/flutter.svg" alt="">
+        <img src="https://buildwithangga.com/themes/front/images/logo/firebase.svg" alt="">
+        <img src="https://buildwithangga.com/themes/front/images/logo/mysql.svg" alt=""> -->
+           </div>
+         </div>
+         <div class="stack-card-ornament sco-1"></div>
+         <div class="stack-card-ornament sco-2"></div>
+       </div>
+       <div class="col position-relative stack-card-group">
+         <div class="course-card-responsive gap-3">
+           <div class="d-flex flex-row flex-md-column align-items-start">
+           <img src="<?php echo base_url(); ?>assets/assets_web/template/img/kursus2.jpeg" alt="" class="img-fluid">
+             <div class="course-detail mt-0 mt-md-3">
+               <div class="course-name">
+                 Berkarir Sebagai Full-Stack Developer (Web/Mobile)
+               </div>
+               <p>
+                 13 courses • 65 hours
+               </p>
+               <!-- <a href="https://buildwithangga.com/journey/become-flutter-apps-developer" class="stretched-link"></a> -->
+             </div>
+           </div>
+           <div class="d-flex align-items-center justify-content-end justify-content-md-start gap-2 roadmap-tools">
+             <!-- <img src="https://buildwithangga.com/themes/front/images/logo/figma-logomark.svg" alt="">
+        <img src="https://buildwithangga.com/themes/front/images/logo/laravel.svg" alt="">
+        <img src="https://buildwithangga.com/themes/front/images/logo/flutter.svg" alt="">
+        <img src="https://buildwithangga.com/themes/front/images/logo/firebase.svg" alt="">
+        <img src="https://buildwithangga.com/themes/front/images/logo/mysql.svg" alt=""> -->
+           </div>
+         </div>
+         <div class="stack-card-ornament sco-1"></div>
+         <div class="stack-card-ornament sco-2"></div>
+       </div>
+       <div class="col position-relative stack-card-group">
+         <div class="course-card-responsive gap-3">
+           <div class="d-flex flex-row flex-md-column align-items-start">
+           <img src="<?php echo base_url(); ?>assets/assets_web/template/img/kursus2.jpeg" alt="" class="img-fluid">
              <div class="course-detail mt-0 mt-md-3">
                <div class="course-name">
                  Berkarir Sebagai Full-Stack Developer (Web/Mobile)

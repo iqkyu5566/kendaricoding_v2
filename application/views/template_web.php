@@ -55,12 +55,12 @@
               <li><a href="#portfolio">Portofolio</a></li>
               <li><a href="#team">Alur Belajar</a></li>
               <li><a href="#contact">Kontak</a></li>
-              
+
 
             </ul>
           </nav>
           <!-- .nav-menu -->
-          <a href="<?= base_url('auth/register'); ?>" class="get-started-btn scrollto">Daftar</a>
+          <a href="<?= base_url('User/register'); ?>" class="get-started-btn scrollto">Daftar</a>
         </div>
       </div>
     </div>
@@ -73,7 +73,7 @@
         <div class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
           <h1>Belajar Coding Lebih Mudah di Kendari Coding</h1>
           <h2>Kami berlokasi di Kota Kendari serta fokus untuk melatih pembelajaran
-		pemrograman Web dan Mobile secara online dan offline
+            pemrograman Web dan Mobile secara online dan offline
           </h2>
           <div class="row">
             <div class="col">
@@ -174,8 +174,8 @@
 
   <!-- Vendor JS Files -->
 
-        
-  
+
+
   <script src="<?= base_url(); ?>assets/assets_web/template/vendor/jquery/jquery.min.js"></script>
   <script src="<?= base_url(); ?>assets/assets_web/template/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="<?= base_url(); ?>assets/assets_web/template/vendor/jquery.easing/jquery.easing.min.js"></script>
