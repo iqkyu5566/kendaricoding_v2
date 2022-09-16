@@ -51,24 +51,25 @@ $subscriber =  $result['items'] [0] ['statistics'] ['subscriberCount'];
 $urlLatestVideo = 'https://www.googleapis.com/youtube/v3/search?key=AIzaSyB8JXGNkcaxa35VSvmB_EgHx22qX0_EFXg&channelId=UC10ulOnRz2JO5jjPQFMltew&maxResults=4&order=date&part=snippet';
 $result = get_CURL($urlLatestVideo);
 $latestVideoId = $result['items'] [0] ['id'] ['videoId'];
+$latestVideoId1 = $result['items'] [1] ['id'] ['videoId'];
 ?>
 
  <main id="main">
 
 
-  <section class="social bg-light" id="social" >
+  <section class="social" id="social" >
     <div class="row pt-4 mb-4">
 
   <div class="container" data-aos="fade-up">
 
     <div class="section-title">
       <div class="col text-center">
-        <h2>Social Media</h2>
+        <h2>Youtube Channel</h2>
        </div>
 
 
       <div class="row justify-content-center">
-        <div class="col-md-5">
+      <div class="col-md-5">
           <div class="row">
             <div class="col-md-4">
             <img src="<?= $youtubeProfilePic?>" width="100" class="rounded-circle img-thumbnail">
@@ -81,7 +82,12 @@ $latestVideoId = $result['items'] [0] ['id'] ['videoId'];
           <div class="row mt-3 pb-3">
             <div class="col">
               <div class="embed-responsive embed-responsive-21by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/<?= $latestVideoId; ?>?rel=0" allowfullscreen></iframe>
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/<?= $latestVideoId; ?>?rel=0" allowfullscreen style="width: 500px; height:170px;"></iframe>
+              </div>
+            </div>
+            <div class="col">
+              <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/<?= $latestVideoId1; ?>?rel=0" allowfullscreen style="width: 500px; height:170px;"></iframe>
               </div>
             </div>
           </div>
