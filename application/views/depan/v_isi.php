@@ -680,7 +680,7 @@
 
        <div class="section-title">
          <h2>Testimonials</h2>
-         <p>Pesan dan kesan serta masukan dari para custumer.</p>
+         <p>Pesan dan kesan serta masukan dari para costumer.</p>
        </div>
 
        <div class="owl-carousel testimonials-carousel">

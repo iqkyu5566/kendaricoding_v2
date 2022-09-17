@@ -25,9 +25,9 @@ class Auth extends CI_Controller
             if (password_verify($password, $user['password'])) {
                 // retrive user data to session
                 $this->session->set_userdata($user);
-                redirect('welcome');
+                redirect('Dashboard');
             } else {
-                redirect('auth');
+                redirect('Dashboard');
             }
         } else {
             $this->session->set_flashdata('status_login', 'email atau password yang anda input salah');

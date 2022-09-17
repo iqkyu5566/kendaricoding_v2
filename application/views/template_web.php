@@ -77,7 +77,7 @@
           </h2>
           <div class="row">
             <div class="col">
-              <a href="<?= base_url('auth/login'); ?>" class="btn-get-started scrollto">Mulai Belajar</a>
+              <a href="<?= base_url('auth'); ?>" class="btn-get-started scrollto">Mulai Belajar</a>
             </div>
             <div class="col">
               <a href="<?= base_url('pemesanan/pesanaplikasi'); ?>" class="btn-get-started scrollto">Pesan Aplikasi</a>
