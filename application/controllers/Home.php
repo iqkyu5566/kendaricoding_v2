@@ -10,6 +10,7 @@ class Home extends CI_Controller
 		//Do your magic here
 		$this->load->model('M_pages');
 		$this->load->model('Testimoni_model');
+		$this->load->model('Kursus_model');
 	}
 
 	public function index()
@@ -20,6 +21,7 @@ class Home extends CI_Controller
 		);
 
 		$data['data_testimoni']		= $this->Testimoni_model->get_all();
+		$data['data_kursus']		= $this->Kursus_model->get_all();
 		// $data['data_deskripsi']	= $this->M_pages->get_deskripsi_company()->row_array();
 
 		// echo "<pre>";

@@ -25,6 +25,83 @@
      </div>
    </section>
    <!-- End About Section -->
+
+   <!-- API YOUTUBE START -->
+   <?php
+function get_CURL($url)
+{
+$curl = curl_init();
+curl_setopt($curl, CURLOPT_URL, $url);
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+$result = curl_exec($curl);
+curl_close($curl);
+
+  
+return json_decode($result, true);
+}
+
+$result = get_CURL('https://www.googleapis.com/youtube/v3/channels?part=snippet,statistics&id=UC10ulOnRz2JO5jjPQFMltew&key=AIzaSyB8JXGNkcaxa35VSvmB_EgHx22qX0_EFXg');
+
+$youtubeProfilePic = $result['items'] [0] ['snippet'] ['thumbnails'] ['medium'] ['url'];
+$channelName = $result['items'] [0] ['snippet'] ['title'];
+$subscriber =  $result['items'] [0] ['statistics'] ['subscriberCount'];
+
+
+//latest video
+$urlLatestVideo = 'https://www.googleapis.com/youtube/v3/search?key=AIzaSyB8JXGNkcaxa35VSvmB_EgHx22qX0_EFXg&channelId=UC10ulOnRz2JO5jjPQFMltew&maxResults=4&order=date&part=snippet';
+$result = get_CURL($urlLatestVideo);
+$latestVideoId = $result['items'] [0] ['id'] ['videoId'];
+$latestVideoId1 = $result['items'] [1] ['id'] ['videoId'];
+?>
+
+ <main id="main">
+
+
+  <section class="social" id="social" >
+    <div class="row pt-4 mb-4">
+
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <div class="col text-center">
+        <h2>Youtube Channel</h2>
+       </div>
+
+
+      <div class="row justify-content-center">
+      <div class="col-md-5">
+          <div class="row">
+            <div class="col-md-4">
+            <img src="<?= $youtubeProfilePic?>" width="100" class="rounded-circle img-thumbnail">
+            </div>
+            <div class="col-md-8">
+              <h5><?= $channelName; ?></h5>
+              <p><?= $subscriber?> Subscriber</p>
+            </div>
+          </div>
+          <div class="row mt-3 pb-3">
+            <div class="col">
+              <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/<?= $latestVideoId; ?>?rel=0" allowfullscreen style="width: 500px; height:170px;"></iframe>
+              </div>
+            </div>
+            <div class="col">
+              <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/<?= $latestVideoId1; ?>?rel=0" allowfullscreen style="width: 500px; height:170px;"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+   </div>
+  </section>
+  <!-- API YOUTUBE END -->
+
+
+  
+
    <!-- ======= Counts Section ======= -->
    <section id="counts" class="counts">
      <div class="container">
@@ -149,168 +226,51 @@
        }
      </style>
    </head>
+   
    <div class="container-fluid">
-     <div class="mb-4">
+     <div class="mb-4 text-center mt-3">
        <div class="front-text-group ">
-         <p class="text-support text-green">Follow The Roadmap</p>
          <h2 class="header-primary mb-0">Alur Belajar Terbaik <br class="desktop">
            Untuk Membangun Karir</h2>
          <p class="capt"></p>
+         
        </div>
      </div>
      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-5">
+      
+     <?php foreach ($data_kursus as $rows) : ?>
        <div class="col position-relative stack-card-group">
          <div class="course-card-responsive gap-3">
            <div class="d-flex flex-row flex-md-column align-items-start">
-             <img src="<?php echo base_url(); ?>assets/assets_web/template/img/kursus1.jpeg" alt="" class="img-fluid">
+             <img src="<?php echo base_url('assets/gambar/').$rows->gambar; ?>" alt="" class="img-fluid" style="max-height:190px;">
+
              <div class="course-detail mt-0 mt-md-3">
                <div class="course-name">
-                 Berkarir Sebagai seorang progammer
+               <?php echo $rows->judul_kursus; ?>
                </div>
                <p>
-                 20 courses • 77 hours
+               <?php echo $rows->jumlah; ?> courses • <?php echo $rows->jam; ?> hours
                </p>
                <!-- <a href="https://buildwithangga.com/journey/become-user-interface-designer" class="stretched-link"></a> -->
              </div>
            </div>
            <div class="d-flex align-items-center justify-content-end justify-content-md-start gap-2 roadmap-tools">
-             <!-- <img src="https://buildwithangga.com/themes/front/images/logo/figma-logomark.svg" alt="">
-        <img src="https://buildwithangga.com/themes/front/images/logo/maze-logomark.svg" alt="">
-        <img src="https://buildwithangga.com/themes/front/images/logo/dribbble-logomark.svg" alt="">
-        <img src="https://buildwithangga.com/themes/front/images/logo/whimsical.svg" alt="">
-        <img src="https://buildwithangga.com/themes/front/images/logo/notion-2.svg" alt=""> -->
+             
            </div>
          </div>
+        
          <div class="stack-card-ornament sco-1"></div>
          <div class="stack-card-ornament sco-2"></div>
        </div>
-       <div class="col position-relative stack-card-group">
-         <div class="course-card-responsive gap-3">
-           <div class="d-flex flex-row flex-md-column align-items-start">
-             <img src="<?php echo base_url(); ?>assets/assets_web/template/img/kursus2.jpeg" alt="" class="img-fluid">
-             <div class="course-detail mt-0 mt-md-3">
-               <div class="course-name">
-                 Berkarir Sebagai Full-Stack Developer
-               </div>
-               <p>
-                 12 courses • 34 hours
-               </p>
-               <!-- <a href="https://buildwithangga.com/journey/become-front-end-developer" class="stretched-link"></a> -->
-             </div>
-           </div>
-           <div class="d-flex align-items-center justify-content-end justify-content-md-start roadmap-tools">
-             <!-- <img src="https://buildwithangga.com/themes/front/images/logo/javascript-logomark-rounded.svg" alt="">
-        <img src="https://buildwithangga.com/themes/front/images/logo/figma-logomark.svg" alt="">
-        <img src="https://buildwithangga.com/themes/front/images/logo/nodejs.svg" alt="">
-        <img src="https://buildwithangga.com/themes/front/images/logo/mongodb-icon-1.svg" alt=""> -->
-           </div>
-         </div>
-         <div class="stack-card-ornament sco-1"></div>
-         <div class="stack-card-ornament sco-2"></div>
-       </div>
-       <div class="col position-relative stack-card-group">
-         <div class="course-card-responsive gap-3">
-           <div class="d-flex flex-row flex-md-column align-items-start">
-           <img src="<?php echo base_url(); ?>assets/assets_web/template/img/kursus2.jpeg" alt="" class="img-fluid">
-             <div class="course-detail mt-0 mt-md-3">
-               <div class="course-name">
-                 Berkarir Sebagai Full-Stack Developer (Web/Mobile)
-               </div>
-               <p>
-                 13 courses • 65 hours
-               </p>
-               <!-- <a href="https://buildwithangga.com/journey/become-flutter-apps-developer" class="stretched-link"></a> -->
-             </div>
-           </div>
-           <div class="d-flex align-items-center justify-content-end justify-content-md-start gap-2 roadmap-tools">
-             <!-- <img src="https://buildwithangga.com/themes/front/images/logo/figma-logomark.svg" alt="">
-        <img src="https://buildwithangga.com/themes/front/images/logo/laravel.svg" alt="">
-        <img src="https://buildwithangga.com/themes/front/images/logo/flutter.svg" alt="">
-        <img src="https://buildwithangga.com/themes/front/images/logo/firebase.svg" alt="">
-        <img src="https://buildwithangga.com/themes/front/images/logo/mysql.svg" alt=""> -->
-           </div>
-         </div>
-         <div class="stack-card-ornament sco-1"></div>
-         <div class="stack-card-ornament sco-2"></div>
-       </div>
-       <div class="col position-relative stack-card-group">
-         <div class="course-card-responsive gap-3">
-           <div class="d-flex flex-row flex-md-column align-items-start">
-           <img src="<?php echo base_url(); ?>assets/assets_web/template/img/kursus2.jpeg" alt="" class="img-fluid">
-             <div class="course-detail mt-0 mt-md-3">
-               <div class="course-name">
-                 Berkarir Sebagai Full-Stack Developer (Web/Mobile)
-               </div>
-               <p>
-                 13 courses • 65 hours
-               </p>
-               <!-- <a href="https://buildwithangga.com/journey/become-flutter-apps-developer" class="stretched-link"></a> -->
-             </div>
-           </div>
-           <div class="d-flex align-items-center justify-content-end justify-content-md-start gap-2 roadmap-tools">
-             <!-- <img src="https://buildwithangga.com/themes/front/images/logo/figma-logomark.svg" alt="">
-        <img src="https://buildwithangga.com/themes/front/images/logo/laravel.svg" alt="">
-        <img src="https://buildwithangga.com/themes/front/images/logo/flutter.svg" alt="">
-        <img src="https://buildwithangga.com/themes/front/images/logo/firebase.svg" alt="">
-        <img src="https://buildwithangga.com/themes/front/images/logo/mysql.svg" alt=""> -->
-           </div>
-         </div>
-         <div class="stack-card-ornament sco-1"></div>
-         <div class="stack-card-ornament sco-2"></div>
-       </div>
-       <div class="col position-relative stack-card-group">
-         <div class="course-card-responsive gap-3">
-           <div class="d-flex flex-row flex-md-column align-items-start">
-           <img src="<?php echo base_url(); ?>assets/assets_web/template/img/kursus2.jpeg" alt="" class="img-fluid">
-             <div class="course-detail mt-0 mt-md-3">
-               <div class="course-name">
-                 Berkarir Sebagai Full-Stack Developer (Web/Mobile)
-               </div>
-               <p>
-                 13 courses • 65 hours
-               </p>
-               <!-- <a href="https://buildwithangga.com/journey/become-flutter-apps-developer" class="stretched-link"></a> -->
-             </div>
-           </div>
-           <div class="d-flex align-items-center justify-content-end justify-content-md-start gap-2 roadmap-tools">
-             <!-- <img src="https://buildwithangga.com/themes/front/images/logo/figma-logomark.svg" alt="">
-        <img src="https://buildwithangga.com/themes/front/images/logo/laravel.svg" alt="">
-        <img src="https://buildwithangga.com/themes/front/images/logo/flutter.svg" alt="">
-        <img src="https://buildwithangga.com/themes/front/images/logo/firebase.svg" alt="">
-        <img src="https://buildwithangga.com/themes/front/images/logo/mysql.svg" alt=""> -->
-           </div>
-         </div>
-         <div class="stack-card-ornament sco-1"></div>
-         <div class="stack-card-ornament sco-2"></div>
-       </div>
-       <div class="col position-relative stack-card-group">
-         <div class="course-card-responsive gap-3">
-           <div class="d-flex flex-row flex-md-column align-items-start">
-           <img src="<?php echo base_url(); ?>assets/assets_web/template/img/kursus2.jpeg" alt="" class="img-fluid">
-             <div class="course-detail mt-0 mt-md-3">
-               <div class="course-name">
-                 Berkarir Sebagai Full-Stack Developer (Web/Mobile)
-               </div>
-               <p>
-                 13 courses • 65 hours
-               </p>
-               <!-- <a href="https://buildwithangga.com/journey/become-flutter-apps-developer" class="stretched-link"></a> -->
-             </div>
-           </div>
-           <div class="d-flex align-items-center justify-content-end justify-content-md-start gap-2 roadmap-tools">
-             <!-- <img src="https://buildwithangga.com/themes/front/images/logo/figma-logomark.svg" alt="">
-        <img src="https://buildwithangga.com/themes/front/images/logo/laravel.svg" alt="">
-        <img src="https://buildwithangga.com/themes/front/images/logo/flutter.svg" alt="">
-        <img src="https://buildwithangga.com/themes/front/images/logo/firebase.svg" alt="">
-        <img src="https://buildwithangga.com/themes/front/images/logo/mysql.svg" alt=""> -->
-           </div>
-         </div>
-         <div class="stack-card-ornament sco-1"></div>
-         <div class="stack-card-ornament sco-2"></div>
-       </div>
+       <?php endforeach; ?>
+
      </div>
    </div>
    <!-- end punya cindi -->
+
+
+
+
 
 
    <!-- ======= Services Section ======= -->
@@ -450,6 +410,8 @@
 
    <!-- End Features Section -->
 
+
+    
    <!-- ======= Pricing Section ======= -->
    <section id="pricing" class="pricing section-bg">
      <div class="container-fluid mx-4" data-aos="fade-up">
